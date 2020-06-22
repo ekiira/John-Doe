@@ -1,20 +1,24 @@
 body {
   margin: 0;
   background: #353353;
-  color: white
+  color: white;
 }
-nav {
+#side-nav {
   height: 100%;
-  width: 160px;
+  width: 180px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding: 7rem 5rem;
-
+  border-right: 1px solid #E5E5E5;
 }
 
+nav {
+  padding-top: 70%;
+  padding-bottom: 50%;
+
+}
 .nav-link {
   color: white;
   text-decoration: none;
@@ -28,12 +32,75 @@ nav {
   color: #F9D74C
 }
 
-.main {
-margin-left: 160px;
-font-size: 28px;
-padding: 0px 10px
+.nav-link:active {
+  color: #F9D74C;
 }
 
-img {
-  background: white;
+.main {
+  margin-left: 180px;
+  padding: 0px 10px
+}
+
+#home {
+  background: url('./assets/images/home-background.png')no-repeat;
+  background-position: center; 
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro {
+  margin: 15% auto 10% auto;
+}
+
+#about {
+ font-size: 18px;
+}
+
+.break {
+  float: right;
+}
+
+.photo {
+  background: #FF4C60;
+}
+
+.anime {
+  background: #F9D74C;
+}
+
+.video {
+  background: #9C9AB3;
+}
+
+.button {
+  background: #FF4C60;
+}
+
+.title {
+  color: #F9D74C;
+}
+
+#services .container {
+  padding: 0 10%;
+}
+
+#portfolio ul {
+list-style: none;
+} 
+
+.image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.over{
+  position: absolute;
+  top: 45%;
+  left: 40%; 
+}
+
+q {
+  font-size: 100px;
 }

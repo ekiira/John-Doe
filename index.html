@@ -10,54 +10,79 @@
 
 </head> 
 <body>
+<section id="side-nav">
   <nav class="nav flex-column">
-    <a class="nav-link py-3 active" href="#"> Home</a>
-    <a class="nav-link py-3" href="#">  About</a>
-    <a class="nav-link py-3" href="#">  Services</a>
-    <a class="nav-link py-3" href="#">Portfolio</a>
-    <a class="nav-link py-3" href="#">  Testimonials</a>
-    <a class="nav-link py-3" href="#">Contact</a>
+    <a class="nav-link py-3 active" href="#home"> <img src="./assets/icons/home-icon.svg" alt="home-icon" class="mr-3" /> Home</a>
+    <a class="nav-link py-3" href="#about"> <img src="./assets/icons/about-icon.svg" alt="about-icon" class="mr-3"/> About</a>
+    <a class="nav-link py-3" href="#services"> <img src="./assets/icons/services-icon.svg" alt="service-icon" class="mr-3"/> Services</a>
+    <a class="nav-link py-3" href="#portfolio"> <img src="./assets/icons/portfolio-icon.svg" alt="portfolio-icon" class="mr-3"/> Portfolio</a>
+    <a class="nav-link py-3" href="#testimonials"> <img src="./assets/icons/testimonial-icon.svg" alt="tstimonials-icon" class="mr-3"/> Testimonials</a>
+    <a class="nav-link py-3" href="#contact"> <img src="./assets/icons/contact-icon.svg" alt="contact-icon" class="mr-3"/> Contact</a>
 
   </nav>
+  <p class="pt-5">&copy; 2020 John Doe</p>
+</section>
   <div class="main">
-  <section class="about" id="about">
+    <section class="home text-center" id="home">
+        <div class="container">
+          <div class="intro">
+            <img src="./assets/images/avatar.png" alt="John Doe" class="rounded-circle" />
+          <p>Hi, My Name is John Doe.<br/>
+            <span class="colored">I am a Professional Photographer</span> 
+          </p>
+          <p>
+            <img src="./assets/icons/facebook.svg" alt="facebook-logo" class="mr-3"/>
+            <img src="./assets/icons/twitter.svg" alt="twitterk-logo" class="mr-3"/>
+            <img src="./assets/icons/instagram.svg" alt="instagram-logo" class="mr-3"/>
+            <img src="./assets/icons/linkedin.svg" alt="linkedin-logo" class="mr-3"/>
+  
+          </p>
+          <button class="btn">Hire Me</button>
+  
+          </div>
+          <a class="mt-5" href="#about"><img src="./assets/icons/arrow-down.svg" alt="arrow-down" class=" arrow-down"/></a>
+  
+        </div>
+    </section>
+
+  <section class="about my-5" id="about">
     <div class="container">
       <h2 class="text-center">ABOUT ME</h2>
-      <div class="row">
+      <div class="row py-5">
         <div class="col-12 col-md-4">
-          <img src='' alt='me' class="img-fluid rounded" />
+          <img src='./assets/images/avatar.png' alt='me' class="rounded" />
         </div>
         <div class="col-12 col-md-4">
           <p>I am a professional freelance photographer and video editor with over 10years of experiece capturing beautiful moments</p>
-        <button class="btn">Download CV</button>
+        <button class="btn button">Download CV</button>
         </div>
         <div class="col-12 col-md-4">
           <div class="progress-bar-linear">
             <p class="progress-bar-text">Photography<span class="break">99%</span></p>
             <div class="progress" style="height:6px">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar photo" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
           <div class="progress-bar-linear">
               <p class="progress-bar-text">Animation<span class="break">95%</span></p>
               <div class="progress" style="height:6px">
-                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar anime" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
           </div>
           <div class="progress-bar-linear">
               <p class="progress-bar-text">Video Production<span class="break">97%</span></p>
               <div class="progress" style="height:6px">
-                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar video" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-6">
-          <h4>EDUCATION</h4>
+          <h4 class="title">EDUCATION</h4>
             <div class="row">
               <div class="col-2">
-
+                <img src="./assets/icons/education-icon.svg" alt="education-icon" />
               </div>
               <div class="col-6">
                 <p>University of Ilorin 
@@ -71,6 +96,7 @@
             </div>
             <div class="row">
               <div class="col-2">
+                <img src="./assets/icons/education-icon.svg" alt="education-icon" />
 
               </div>
               <div class="col-6">
@@ -85,6 +111,7 @@
             </div>
             <div class="row">
               <div class="col-2">
+                <img src="./assets/icons/education-icon.svg" alt="education-icon" />
 
               </div>
               <div class="col-6">
@@ -99,10 +126,11 @@
             </div>
         </div>
         <div class="col-12 col-md-6">
-          <h4>EXPERIENCE</h4>
+          <h4 class="title">EXPERIENCE</h4>
 
           <div class="row">
             <div class="col-2">
+              <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
 
             </div>
             <div class="col-6">
@@ -117,6 +145,7 @@
           </div>
           <div class="row">
             <div class="col-2">
+              <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
 
             </div>
             <div class="col-6">
@@ -131,6 +160,7 @@
           </div>
           <div class="row">
             <div class="col-2">
+              <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
 
             </div>
             <div class="col-6">
@@ -146,7 +176,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn">DOWNLOAD RESUME</button>
+        <button class="btn button">DOWNLOAD RESUME</button>
       </div>
       </div>
   </section>
@@ -154,43 +184,187 @@
   <section class="services" id="services">
     <div class="container">
       <h2 class="text-center">SERVICES</h2>
-        <div class="row">
+        <div class="row py-3">
           <div class="col-12 col-md-6">
-            <img src="" alt="works" class="img-fluid"/>
+            <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
           </div>
           <div class="col-12 col-md-6">
             <h5>Photography</h5>
 
             <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
-            <button class="btn">PAST JOBS</button>
+            <button class="btn button">PAST JOBS</button>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row py-3">
           <div class="col-12 col-md-6">
-            <img src="" alt="works" class="img-fluid"/>
+            <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
           </div>
           <div class="col-12 col-md-6">
             <h5>Animation</h5>
 
             <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
-            <button class="btn">PAST JOBS</button>
+            <button class="btn button">PAST JOBS</button>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row py-3">
           <div class="col-12 col-md-6">
-            <img src="" alt="works" class="img-fluid"/>
+            <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
           </div>
           <div class="col-12 col-md-6">
             <h5>Video Production</h5>
             <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
-            <button class="btn">PAST JOBS</button>
+            <button class="btn button">PAST JOBS</button>
           </div>
         </div>
     </div>
   </section>
 
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div>
+        <ul class="nav d-flex justify-content-end">
+          <li class="nav-link mr-3 active">All</li>
+          <li class="nav-link mr-3">Photos</li>
+          <li class="nav-link mr-3">Videos</li>
+          <li class="nav-link mr-3">Animations</li>
+
+        </ul>
+        <div class="row">
+          <div class="col-6 col-lg-4 py-3">
+            <img src="./assets/images/eleganza-hotel.png" class="image"/>
+            <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
+          </div>
+          <div class="col-6 col-lg-4 py-3">
+            <img src="./assets/images/blackout-2.png" class="image"/>
+            <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
+            
+          </div>
+          <div class="col-6 col-lg-4 py-3">
+            <img src="./assets/images/kwara-bridge.png" class="image"/>
+            <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
+            
+          </div>
+          <div class="col-6 col-lg-4 py-3">
+            <img src="./assets/images/binance-app.png" class="image"/>
+            <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
+            
+          </div>
+          <div class="col-6 col-lg-4 py-3">
+            <img src="./assets/images/hotel-tranza.png" class="image"/>
+            <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
+            
+          </div>
+          <div class="col-md-4 py-3">
+            <img src="./assets/images/blackout-1.png"/>
+            <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
+            
+          </div>
+        </div>
+
+        <div class="text-center">
+        <button class="btn button">LOAD MORE</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+<div class="container">
+ 
+
+  <div class="brands">
+    <h4 class="title">TRUSTED BRANDS</h4>
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/icons/brand-behance.svg" alt="brand"/>
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-amazon.svg" alt="brand"/>
+        
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-slack.svg" alt="brand"/>
+        
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-visa.svg" alt="brand"/>
+        
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-behance.svg" alt="brand"/>
+        
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-amazon.svg" alt="brand"/>
+        
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-slack.svg" alt="brand"/>
+        
+      </div>
+      <div class="col-3">
+        <img src="./assets/icons/brand-visa.svg" alt="brand"/>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container text-center">
+      <h2>CONTACT</h2>
+      <p><strong>what do you want to do?</strong></p>
+      <div class="row">
+        <div class="col-4">
+          <button class="btn">
+            Photoshoot
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn">
+          Video Production
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn">
+          Animation
+
+          </button>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col-6">
+          <button class="btn">
+            Enquiries
+          </button>
+         </div>
+         <div class="col-6">
+          <button class="btn">
+          Feedback
+          </button>
+         </div>
+       </div>
+   <form>
+     <div class="row">
+     <div class="col-6">
+        <input type="text" placeholder="Name" class="form-control"/>
+     </div>
+     <div class="col-6">
+      <input type="email" placeholder="Email" class="form-control"/>
+   </div>
+  </div>
+   <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+   <button class="btn button">SEND</button>
+   </form>
+        
+      
+    </div>
+  </section>
   
 </div>
 
