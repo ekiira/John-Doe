@@ -75,10 +75,17 @@ nav {
 
 .button {
   background: #FF4C60;
+  border-radius: 50px;
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em
+
 }
 
 .title {
   color: #F9D74C;
+  border-bottom: 1px solid white;
 }
 
 #services .container {
@@ -103,4 +110,71 @@ list-style: none;
 
 q {
   font-size: 100px;
+}
+
+.colored {
+  color: #F9D74C;
+}
+
+.box {
+background: #302F4E;
+border-radius: 20px
+}
+
+.dark{
+  background: #302F4E;
+  border-radius: 20px
+}
+
+.inverse-button {
+  border-radius: none;
+  color: white;
+  font-weight: 700;
+  background: #353353;
+  border: 1px solid white;
+  padding: 10px;
+  letter-spacing: -0.02em
+
+}
+
+.inverse-button:hover {
+  border-radius: none;
+  color: white;
+  font-weight: 700;
+  background: #FF4C60;
+  border: none;
+}
+
+.inverse-button:focus {
+  border-radius: none;
+  color: white;
+  font-weight: 700;
+  background: #FF4C60;
+  border: none;
+}
+
+.fill {
+  background-color: #353353;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.fill:focus {
+  background-color: #353353;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.text {
+  background-color: #353353;
+  border: 1px solid white;
+}
+
+.text:focus {
+  background-color: #353353;
+  border: 1px solid white;
+}
+
+h2 {
+  font-weight: 900;
 }

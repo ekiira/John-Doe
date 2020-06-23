@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-<!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="./style.css"/>
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css"/>
 
 </head> 
 <body>
@@ -18,17 +18,21 @@
     <a class="nav-link py-3" href="#portfolio"> <img src="./assets/icons/portfolio-icon.svg" alt="portfolio-icon" class="mr-3"/> Portfolio</a>
     <a class="nav-link py-3" href="#testimonials"> <img src="./assets/icons/testimonial-icon.svg" alt="tstimonials-icon" class="mr-3"/> Testimonials</a>
     <a class="nav-link py-3" href="#contact"> <img src="./assets/icons/contact-icon.svg" alt="contact-icon" class="mr-3"/> Contact</a>
-
   </nav>
   <p class="pt-5">&copy; 2020 John Doe</p>
 </section>
+
+
+
+
+
   <div class="main">
-    <section class="home text-center" id="home">
+    <section class="home text-center py-4" id="home">
         <div class="container">
           <div class="intro">
             <img src="./assets/images/avatar.png" alt="John Doe" class="rounded-circle" />
           <p>Hi, My Name is John Doe.<br/>
-            <span class="colored">I am a Professional Photographer</span> 
+            <span>I am a <span class="colored">Professional Photographer</span></span> 
           </p>
           <p>
             <img src="./assets/icons/facebook.svg" alt="facebook-logo" class="mr-3"/>
@@ -37,57 +41,109 @@
             <img src="./assets/icons/linkedin.svg" alt="linkedin-logo" class="mr-3"/>
   
           </p>
-          <button class="btn">Hire Me</button>
+          <button class="btn button">Hire Me</button>
   
-          </div>
-          <a class="mt-5" href="#about"><img src="./assets/icons/arrow-down.svg" alt="arrow-down" class=" arrow-down"/></a>
-  
+        </div>  
         </div>
     </section>
 
-  <section class="about my-5" id="about">
-    <div class="container">
-      <h2 class="text-center">ABOUT ME</h2>
-      <div class="row py-5">
-        <div class="col-12 col-md-4">
-          <img src='./assets/images/avatar.png' alt='me' class="rounded" />
-        </div>
-        <div class="col-12 col-md-4">
-          <p>I am a professional freelance photographer and video editor with over 10years of experiece capturing beautiful moments</p>
-        <button class="btn button">Download CV</button>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="progress-bar-linear">
-            <p class="progress-bar-text">Photography<span class="break">99%</span></p>
-            <div class="progress" style="height:6px">
-                <div class="progress-bar photo" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+    <section class="about py-4" id="about">
+      <div class="container">
+        <h2 class="text-center">ABOUT ME</h2>
+        <div class="row py-5">
+          <div class="col-12 col-lg-4 text-center pb-3">
+            <img src='./assets/images/avatar.png' alt='me' class="rounded" />
+          </div>
+          <div class="col-12 col-lg-8 dark px-5">
+            <div class="row text-center">
+              <div class="col-12 col-lg-6 py-3">
+                  <p>I am a professional freelance photographer and video editor with over 10years of experiece capturing beautiful moments</p>
+                <button class="btn button">Download CV</button>
+              </div>
+              <div class="col-12 col-lg-6 py-3">
+                <div class="progress-bar-linear">
+                  <p class="progress-bar-text">Photography<span class="break">99%</span></p>
+                  <div class="progress" style="height:6px">
+                      <div class="progress-bar photo" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress-bar-linear">
+                    <p class="progress-bar-text">Animation<span class="break">95%</span></p>
+                    <div class="progress" style="height:6px">
+                        <div class="progress-bar anime" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="progress-bar-linear">
+                    <p class="progress-bar-text">Video Production<span class="break">97%</span></p>
+                    <div class="progress" style="height:6px">
+                        <div class="progress-bar video" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="progress-bar-linear">
-              <p class="progress-bar-text">Animation<span class="break">95%</span></p>
-              <div class="progress" style="height:6px">
-                  <div class="progress-bar anime" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-          </div>
-          <div class="progress-bar-linear">
-              <p class="progress-bar-text">Video Production<span class="break">97%</span></p>
-              <div class="progress" style="height:6px">
-                  <div class="progress-bar video" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-          </div>
+         
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h4 class="title">EDUCATION</h4>
+        <div class="row">
+          <div class="col-12 col-lg-6 px-4 pb-5">
+            <h4 class="title">EDUCATION</h4>
+              <div class="row">
+                <div class="col-2">
+                  <img src="./assets/icons/education-icon.svg" alt="education-icon" />
+                </div>
+                <div class="col-6">
+                  <p>University of Ilorin 
+                    <br/>
+                    <span>Phd. Photography</span>
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>2018-2020</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <img src="./assets/icons/education-icon.svg" alt="education-icon" />
+
+                </div>
+                <div class="col-6">
+                  <p>University of Leeds 
+                    <br/>
+                    <span>Msc. Photography</span>
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>2013-2015</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <img src="./assets/icons/education-icon.svg" alt="education-icon" />
+
+                </div>
+                <div class="col-6">
+                  <p>University of Lagos 
+                    <br/>
+                    <span>Bsc. Media & Movie Production</span>
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>2008-2012</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-6 px-4 pb-5">
+            <h4 class="title">EXPERIENCE</h4>
+
             <div class="row">
               <div class="col-2">
-                <img src="./assets/icons/education-icon.svg" alt="education-icon" />
+                <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
+
               </div>
               <div class="col-6">
-                <p>University of Ilorin 
+                <p>Upwork 
                   <br/>
-                  <span>Phd. Photography</span>
+                  <span>Freelance Photographer</span>
                 </p>
               </div>
               <div class="col-4">
@@ -96,13 +152,13 @@
             </div>
             <div class="row">
               <div class="col-2">
-                <img src="./assets/icons/education-icon.svg" alt="education-icon" />
+                <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
 
               </div>
               <div class="col-6">
-                <p>University of Leeds 
+                <p>Fiverr 
                   <br/>
-                  <span>Msc. Photography</span>
+                  <span>Freelance Video Edito</span>
                 </p>
               </div>
               <div class="col-4">
@@ -111,118 +167,71 @@
             </div>
             <div class="row">
               <div class="col-2">
-                <img src="./assets/icons/education-icon.svg" alt="education-icon" />
+                <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
 
               </div>
               <div class="col-6">
-                <p>University of Lagos 
+                <p>Hop & Skip Media
                   <br/>
-                  <span>Bsc. Media & Movie Production</span>
+                  <span>Production Lead</span>
                 </p>
               </div>
               <div class="col-4">
                 <p>2008-2012</p>
               </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <h4 class="title">EXPERIENCE</h4>
-
-          <div class="row">
-            <div class="col-2">
-              <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
-
-            </div>
-            <div class="col-6">
-              <p>Upwork 
-                <br/>
-                <span>Freelance Photographer</span>
-              </p>
-            </div>
-            <div class="col-4">
-              <p>2018-2020</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
-
-            </div>
-            <div class="col-6">
-              <p>Fiverr 
-                <br/>
-                <span>Freelance Video Edito</span>
-              </p>
-            </div>
-            <div class="col-4">
-              <p>2013-2015</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <img src="./assets/icons/experience-icon.svg" alt="education-icon" />
-
-            </div>
-            <div class="col-6">
-              <p>Hop & Skip Media
-                <br/>
-                <span>Production Lead</span>
-              </p>
-            </div>
-            <div class="col-4">
-              <p>2008-2012</p>
-            </div>
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <button class="btn button">DOWNLOAD RESUME</button>
-      </div>
-      </div>
-  </section>
+        <div class="text-center">
+          <button class="btn button">DOWNLOAD RESUME</button>
+        </div>
+        </div>
+    </section>
 
-  <section class="services" id="services">
+    <section class="services py-4" id="services">
+      <div class="container">
+        <h2 class="text-center py-4">SERVICES</h2>
+          <div class="row py-3">
+            <div class="col-12 col-lg-6 text-center py-4">
+              <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
+            </div>
+            <div class="col-12 col-lg-6 text-center py-4">
+              <h5>Photography</h5>
+
+              <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
+              <button class="btn button">PAST JOBS</button>
+            </div>
+          </div>
+
+          <div class="row py-3">
+            <div class="col-12 col-lg-6 text-center py-4">
+              <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
+            </div>
+            <div class="col-12 col-lg-6 text-center py-4">
+              <h5>Animation</h5>
+
+              <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
+              <button class="btn button">PAST JOBS</button>
+            </div>
+          </div>
+
+          <div class="row py-3">
+            <div class="col-12 col-lg-6 text-center py-4">
+              <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
+            </div>
+            <div class="col-12 col-lg-6 text-center py-4">
+              <h5>Video Production</h5>
+              <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
+              <button class="btn button">PAST JOBS</button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+  <section class="portfolio py-4" id="portfolio">
     <div class="container">
-      <h2 class="text-center">SERVICES</h2>
-        <div class="row py-3">
-          <div class="col-12 col-md-6">
-            <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
-          </div>
-          <div class="col-12 col-md-6">
-            <h5>Photography</h5>
+      <h2 class="text-center">PORTFOLIO</h2>
 
-            <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
-            <button class="btn button">PAST JOBS</button>
-          </div>
-        </div>
-
-        <div class="row py-3">
-          <div class="col-12 col-md-6">
-            <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
-          </div>
-          <div class="col-12 col-md-6">
-            <h5>Animation</h5>
-
-            <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
-            <button class="btn button">PAST JOBS</button>
-          </div>
-        </div>
-
-        <div class="row py-3">
-          <div class="col-12 col-md-6">
-            <img src="./assets/images/photography-services.png" alt="works" class="img-fluid"/>
-          </div>
-          <div class="col-12 col-md-6">
-            <h5>Video Production</h5>
-            <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized charms</p>
-            <button class="btn button">PAST JOBS</button>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="portfolio" id="portfolio">
-    <div class="container">
       <div>
         <ul class="nav d-flex justify-content-end">
           <li class="nav-link mr-3 active">All</li>
@@ -231,32 +240,32 @@
           <li class="nav-link mr-3">Animations</li>
 
         </ul>
-        <div class="row">
-          <div class="col-6 col-lg-4 py-3">
+        <div class="row text-center">
+          <div class="col-12 col-lg-4 py-3">
             <img src="./assets/images/eleganza-hotel.png" class="image"/>
             <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
           </div>
-          <div class="col-6 col-lg-4 py-3">
+          <div class="col-12 col-lg-4 py-3">
             <img src="./assets/images/blackout-2.png" class="image"/>
             <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
             
           </div>
-          <div class="col-6 col-lg-4 py-3">
+          <div class="col-12 col-lg-4 py-3">
             <img src="./assets/images/kwara-bridge.png" class="image"/>
             <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
             
           </div>
-          <div class="col-6 col-lg-4 py-3">
+          <div class="col-12 col-lg-4 py-3">
             <img src="./assets/images/binance-app.png" class="image"/>
             <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
             
           </div>
-          <div class="col-6 col-lg-4 py-3">
+          <div class="col-12 col-lg-4 py-3">
             <img src="./assets/images/hotel-tranza.png" class="image"/>
             <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
             
           </div>
-          <div class="col-md-4 py-3">
+          <div class="col-12 col-lg-4 py-3">
             <img src="./assets/images/blackout-1.png"/>
             <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
             
@@ -271,41 +280,45 @@
     </div>
   </section>
 
-  <section class="testimonials" id="testimonials">
+  <section class="testimonials py-4" id="testimonials">
 <div class="container">
  
 
-  <div class="brands">
-    <h4 class="title">TRUSTED BRANDS</h4>
-    <div class="row">
-      <div class="col-3">
+  <div class="brands py-4">
+   <div class="row">
+     <div class="col-6">
+      <h4 class="title">TRUSTED BRANDS</h4>
+     </div>
+   </div>
+    <div class="row text-center">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-behance.svg" alt="brand"/>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-amazon.svg" alt="brand"/>
         
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-slack.svg" alt="brand"/>
         
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-visa.svg" alt="brand"/>
         
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-behance.svg" alt="brand"/>
         
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-amazon.svg" alt="brand"/>
         
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-slack.svg" alt="brand"/>
         
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <img src="./assets/icons/brand-visa.svg" alt="brand"/>
         
       </div>
@@ -315,51 +328,53 @@
 </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="container text-center">
+  <section class="contact py-4" id="contact">
+    <div class="container text-center px-5">
       <h2>CONTACT</h2>
       <p><strong>what do you want to do?</strong></p>
-      <div class="row">
+      <div class="row py-4">
         <div class="col-4">
-          <button class="btn">
+          <button class="btn inverse-button">
             Photoshoot
           </button>
         </div>
         <div class="col-4">
-          <button class="btn">
+          <button class="btn inverse-button">
           Video Production
           </button>
         </div>
         <div class="col-4">
-          <button class="btn">
+          <button class="btn inverse-button">
           Animation
 
           </button>
         </div>
       </div>
-       <div class="row">
+       <div class="row py-4">
          <div class="col-6">
-          <button class="btn">
+          <button class="btn inverse-button">
             Enquiries
           </button>
          </div>
          <div class="col-6">
-          <button class="btn">
+          <button class="btn inverse-button">
           Feedback
           </button>
          </div>
        </div>
    <form>
-     <div class="row">
+     <div class="row py-4">
      <div class="col-6">
-        <input type="text" placeholder="Name" class="form-control"/>
+        <input type="text" placeholder="Name" class="form-control fill"/>
      </div>
      <div class="col-6">
-      <input type="email" placeholder="Email" class="form-control"/>
+      <input type="email" placeholder="Email" class="form-control fill"/>
    </div>
   </div>
-   <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
-   <button class="btn button">SEND</button>
+   <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class="form-control text"></textarea>
+   <div class="py-4">
+   <button class="btn button px-5">SEND</button>
+   </div>
    </form>
         
       
