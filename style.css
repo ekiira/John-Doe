@@ -129,6 +129,10 @@ background: #302F4E;
 border-radius: 20px
 }
 
+.arrange {
+  justify-content: center;
+}
+
 .dark{
   background: #302F4E;
   border-radius: 20px
