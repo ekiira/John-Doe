@@ -3,7 +3,8 @@ body {
   background: #353353;
   color: white;
 }
-#side-nav {
+
+#mainSide-nav {
   height: 100%;
   width: 180px;
   position: fixed;
@@ -12,6 +13,10 @@ body {
   left: 0;
   overflow-x: hidden;
   border-right: 1px solid #E5E5E5;
+}
+
+#side-nav {
+  display: none;
 }
 
 nav {
@@ -80,7 +85,10 @@ nav {
   padding: 10px 35px;
   font-weight: 700;
   letter-spacing: -0.02em
+}
 
+.hamburger {
+  display: none;
 }
 
 .title {
@@ -177,4 +185,45 @@ border-radius: 20px
 
 h2 {
   font-weight: 900;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #mainSide-nav {
+    display: none;
+  }
+
+  #side-nav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    margin-right: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #302F4E;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid #E5E5E5;
+
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .hamburger {
+    display: block;
+    margin: 10px;
+  }
 }

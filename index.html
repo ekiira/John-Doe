@@ -10,8 +10,9 @@
 
 </head> 
 <body>
-<section id="side-nav">
-  <nav class="nav flex-column">
+
+<section id="mainSide-nav">
+    <nav class="nav flex-column">     
     <a class="nav-link py-3 active" href="#home"> <img src="./assets/icons/home-icon.svg" alt="home-icon" class="mr-3" /> Home</a>
     <a class="nav-link py-3" href="#about"> <img src="./assets/icons/about-icon.svg" alt="about-icon" class="mr-3"/> About</a>
     <a class="nav-link py-3" href="#services"> <img src="./assets/icons/services-icon.svg" alt="service-icon" class="mr-3"/> Services</a>
@@ -22,11 +23,23 @@
   <p class="pt-5">&copy; 2020 John Doe</p>
 </section>
 
-
+<section id="side-nav">
+  <nav class="nav flex-column">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="nav-link py-3 active" href="#home"> <img src="./assets/icons/home-icon.svg" alt="home-icon" class="mr-3" /> Home</a>
+  <a class="nav-link py-3" href="#about"> <img src="./assets/icons/about-icon.svg" alt="about-icon" class="mr-3"/> About</a>
+  <a class="nav-link py-3" href="#services"> <img src="./assets/icons/services-icon.svg" alt="service-icon" class="mr-3"/> Services</a>
+  <a class="nav-link py-3" href="#portfolio"> <img src="./assets/icons/portfolio-icon.svg" alt="portfolio-icon" class="mr-3"/> Portfolio</a>
+  <a class="nav-link py-3" href="#testimonials"> <img src="./assets/icons/testimonial-icon.svg" alt="tstimonials-icon" class="mr-3"/> Testimonials</a>
+  <a class="nav-link py-3" href="#contact"> <img src="./assets/icons/contact-icon.svg" alt="contact-icon" class="mr-3"/> Contact</a>
+</nav>
+<p class="pt-5">&copy; 2020 John Doe</p>
+</section>
 
 
 
   <div class="main">
+  <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <section class="home text-center py-4" id="home">
         <div class="container">
           <div class="intro">
@@ -383,11 +396,20 @@
   
 </div>
 
-  <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="./index.js"></script>
+
+<script>
+  function openNav() {
+    document.getElementById("side-nav").style.width = "200px";
+    console.log('damnn')
+  }
+  
+  function closeNav() {
+    document.getElementById("side-nav").style.width = "0";
+  }
+  </script>
 </body>
 </html>
 
