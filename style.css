@@ -24,15 +24,23 @@ body {
   align-items: center; 
 }
 
+.side {
+  height: 80%;
+}
+
+.foot {
+  height: 18%;
+}
+
 #side-nav {
   display: none;
 }
 
-nav {
+/* nav {
   padding-top: 70%;
   padding-bottom: 50%;
 
-}
+} */
 .nav-link {
   color: white;
   text-decoration: none;
