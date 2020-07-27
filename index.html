@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css"/>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
 </head> 
 <body data-spy="scroll">
 
@@ -263,64 +266,193 @@
       </div>
     </section>
 
+    <!-- Portfolio -->
   <section class="portfolio py-4" id="portfolio">
     <div class="container">
       <h2 class="text-center">PORTFOLIO</h2>
 
-      <div>
-        <ul class="nav d-flex justify-content-end center">
-          <li class="nav-link mr-2 active">All</li>
-          <li class="nav-link mr-2">Photos</li>
-          <li class="nav-link mr-2">Videos</li>
-          <li class="nav-link mr-2">Animations</li>
+        <div id="isotope-filters" class="my-3 mx-0 d-flex justify-content-end">
+          <button data-filter="*" class="btn filt">
+            <span class="selected link">All</span>
+          </button>
+          <button data-filter=".photos" class="btn filt">
+            <span class="link">Photos</span>
+          </button>
+          <button data-filter=".videos" class="btn filt">
+            <span class="link">Videos</span>
+          </button>
+          <button data-filter=".animations" class="btn filt">
+            <span class="link">Animations</span>
+          </button>
+        </div>
+  
+        <div class="portfolio-filters pb-4" id="portfolio-wrapper">
+          <div class="row text-center" id="isotope-container">
+            <div class="col-12 col-md-6 col-lg-4 py-3 videos">
+              <img src="./assets/images/eleganza-hotel.png" class="image img-fluid"/>
+              <p class="head-position text-center px-3 pt-2 pb-2">VIDEO</p>
+              <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
+              <p class="text-position text-center">Eleganza Hotels Video</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3 animations">
+              <img src="./assets/images/blackout-2.png" class="image img-fluid"/>
+              <p class="head-position text-center px-3 pt-2 pb-2">ANIMATION</p>
+              <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
+              <p class="text-position text-center">Blackout 2: The Movie</p>
+              
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3 photos">
+              <img src="./assets/images/kwara-bridge.png" class="image img-fluid"/>
+              <p class="head-position text-center px-3 pt-2 pb-2">PHOTO</p>
+              <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
+              <p class="text-position text-center">Kwara Bridge</p>
+              
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3 animations">
+              <img src="./assets/images/blackout-1.png" class="image img-fluid"/>
+              <p class="head-position text-center px-3 pt-2 pb-2">ANIMATION</p>
+              <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
+              <p class="text-position text-center">Blackout 1: The Movie</p>
 
-        </ul>
-        <div class="row text-center">
-          <div class="col-12 col-lg-4 py-3">
-            <img src="./assets/images/eleganza-hotel.png" class="image img-fluid"/>
-            <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <img src="./assets/images/blackout-2.png" class="image img-fluid"/>
-            <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
-            
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <img src="./assets/images/kwara-bridge.png" class="image img-fluid"/>
-            <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
-            
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3 photos">
+              <img src="./assets/images/binance-app.png" class="image img-fluid"/>
+              <p class="head-position text-center px-3 pt-2 pb-2">PHOTOS</p>
+              <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
+              <p class="text-position text-center">Binance App Mockup</p>
+              
+            </div>
+
+       
+            <div class="col-12 col-md-6 col-lg-4 py-3 photos">
+              <img src="./assets/images/hotel-tranza.png" class="image img-fluid"/>
+              <p class="head-position text-center px-3 pt-2 pb-2">PHOTOS</p>
+              <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
+              <p class="text-position text-center">Hotel Tranza Photoshoot</p>
+
+              
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-lg-4 py-3">
-            <img src="./assets/images/binance-app.png" class="image img-fluid"/>
-            <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
-            
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <img src="./assets/images/hotel-tranza.png" class="image img-fluid"/>
-            <img src="./assets/icons/picture-overlay-portfolio.svg" class="over"/>
-            
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <img src="./assets/images/blackout-1.png" class="img-fluid"/>
-            <img src="./assets/icons/video-overlay-portfolio.svg" class="over"/>
-            
-          </div>
-        </div>
-
         <div class="text-center">
-        <button class="btn button">LOAD MORE</button>
+          <button class="btn button px-5 py-2">LOAD MORE</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials py-4" id="testimonials">
+    <div class="container">
+<!-- Testimonial Carousel -->
+<div id="carouselExampleControls" class="carousel py-5" data-ride="">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-4 px-3">
+          <blockquote>
+            <br/>
+            <span class="pt-5">
+              On the other hand, 
+              we denounce with righteous 
+              indignation and dislike men who are 
+              so beguiled and demoralized charms
+            </span>
+          </blockquote>
+          <div class="text-center pt-5">
+            <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-4 px-3">
+          <blockquote>
+            <br/>
+
+            On the other hand, 
+            we denounce with righteous 
+            indignation and dislike men who are 
+            so beguiled and demoralized charms
+          </blockquote>
+          <div class="text-center pt-5">
+            <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-4 px-3">
+          <blockquote>
+            <br/>
+
+            On the other hand, 
+            we denounce with righteous 
+            indignation and dislike men who are 
+            so beguiled and demoralized charms
+          </blockquote>
+          <div class="text-center pt-5">
+            <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid">
+          </div>
 
         </div>
       </div>
     </div>
-  </section>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-4 px-3">
+          <blockquote>
+            <br/>
+            <span class="pt-5">
 
-  <section class="testimonials py-4" id="testimonials">
-<div class="container">
- 
+            On the other hand, 
+            we denounce with righteous 
+            indignation and dislike men who are 
+            so beguiled and demoralized charms
+            </span>
+          </blockquote>
+          <div class="text-center pt-5">
+            <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-4 px-3">
+          <blockquote>
+            <br/>
 
+            On the other hand, 
+            we denounce with righteous 
+            indignation and dislike men who are 
+            so beguiled and demoralized charms
+          </blockquote>
+          <div class="text-center pt-4">
+            <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-4 px-3">
+          <blockquote>
+            <br/>
+
+            On the other hand, 
+            we denounce with righteous 
+            indignation and dislike men who are 
+            so beguiled and demoralized charms
+          </blockquote>
+          <div class="text-center pt-5">
+            <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid">
+          </div>
+          <img src="./assets/images/Jason-Statham.png" alt="Jason-Statham" class="img-fluid text-center">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+</div>
+      <!-- Brands -->
   <div class="brands py-4">
    <div class="row">
      <div class="col-12 col-md-4">
@@ -413,20 +545,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-<script>
-  function openNav() {
-    document.getElementById("side-nav").style.width = "200px";
-  }
-  
-  function closeNav() {
-    document.getElementById("side-nav").style.width = "0";
-  }
-
-  $('body').scrollspy({ target: '#idea' });
-
-
-  </script>
+<script src="./js/index.js"></script>
 </body>
 </html>
 

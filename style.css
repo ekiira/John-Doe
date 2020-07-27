@@ -6,6 +6,7 @@ body {
   margin: 0;
   background: #353353;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 #mainSide-nav {
@@ -94,6 +95,33 @@ body {
   letter-spacing: -0.02em
 }
 
+.filt:focus, .filt:active{
+  box-shadow: none;
+}
+
+.selected {
+  color: #F9D74C;
+}
+
+.filt {
+  color: white;
+}
+
+.text-position {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+}
+
+.head-position {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  background-color: #302F4E;
+  border-radius: 0 0 15px 15px;
+}
+
 .hamburger {
   display: none;
 }
@@ -138,9 +166,9 @@ body {
   padding: 0 10%;
 }
 
-#portfolio ul {
-list-style: none;
-} 
+.item {
+  white-space: nowrap;
+}
 
 .image {
   position: relative;
@@ -174,6 +202,30 @@ border-radius: 20px
 .dark{
   background: #302F4E;
   border-radius: 20px
+}
+
+blockquote {
+	position: relative;
+}
+
+blockquote:before, blockquote:after {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 4rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: 0;
+  top: -1rem;
+}
+
+blockquote:after {
+	content: '”';
+  right: 0;
+	bottom: -1rem;
 }
 
 .inverse-button {
