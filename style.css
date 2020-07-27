@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: #353353;
@@ -29,33 +33,23 @@ body {
 }
 
 .foot {
-  height: 18%;
+  height: 16%;
 }
 
 #side-nav {
   display: none;
 }
 
-/* nav {
-  padding-top: 70%;
-  padding-bottom: 50%;
-
-} */
 .nav-link {
   color: white;
-  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #F9D74C
+  color:#F9D74C;
 }
 
-.nav-link:focus {
-  color: #F9D74C
-}
-
-.nav-link:active {
-  color: #F9D74C;
+.navbar .active {
+  color:#F9D74C;
 }
 
 .main {
@@ -102,6 +96,37 @@ body {
 
 .hamburger {
   display: none;
+}
+
+.edu::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  left: 10px;
+  position: absolute;
+  background: url(./assets/icons/education-icon.svg)no-repeat;
+}
+
+.send-btn {
+  padding: 10px 70px;
+}
+
+.exp::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  left: 10px;
+  position: absolute;
+  background: url(./assets/icons/experience-icon.svg)no-repeat;
+}
+
+.line::before {
+  content: "";
+  height: 60px;
+  border: 1px solid #FFFFFF;
+  left: 7%;
+  position: absolute;
+  top: 50%;
 }
 
 .title {
@@ -185,9 +210,11 @@ border-radius: 20px
 }
 
 .fill:focus {
-  background-color: #353353;
+  background-color: white;
   border: none;
   border-bottom: 1px solid white;
+  box-shadow: none;
+
 }
 
 .text {
@@ -196,8 +223,9 @@ border-radius: 20px
 }
 
 .text:focus {
-  background-color: #353353;
+  background-color: white;
   border: 1px solid white;
+  box-shadow: none;
 }
 
 h2 {
