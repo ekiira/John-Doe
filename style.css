@@ -203,7 +203,13 @@ h2 {
   left: 40%; 
 }
 
+.hide {
+  display: none;
+}
 
+.show {
+  display: block;
+}
 
 .box {
 background: #302F4E;
@@ -348,4 +354,14 @@ border-radius: 20px
     background: none;
   }
   
+}
+
+@media screen and (max-width: 435px) {
+  .show {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
 }
